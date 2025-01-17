@@ -18,8 +18,6 @@ Implementa um algoritmo de Árvore de Decisão para tarefas de classificação.
 - Classificação de dados em categorias distintas com base em atributos predefinidos.
 - Identificação de padrões nos dados que podem ser representados hierarquicamente.
 
-**Exemplo de Aplicação:**
-- Diagnóstico médico: Classificação de pacientes com base em sintomas para determinar a presença ou ausência de uma doença.
 
 ### 2. Arvore2.ipynb
 
@@ -30,8 +28,6 @@ Fornece uma variação e aprimoramento do algoritmo de Árvore de Decisão apres
 - Situações onde uma abordagem diferente na construção da árvore pode melhorar a precisão ou interpretabilidade do modelo.
 - Comparação de diferentes técnicas de construção de árvores para determinar a mais eficaz para um conjunto de dados específico.
 
-**Exemplo de Aplicação:**
-- Análise de crédito: Determinação da elegibilidade de um cliente para um empréstimo com base em histórico financeiro e outros fatores.
 
 ### 3. KNN.ipynb
 
@@ -42,8 +38,16 @@ Implementa o algoritmo K-Nearest Neighbors (KNN) para classificação.
 - Classificação onde a proximidade entre os dados é uma indicação de similaridade.
 - Problemas onde a decisão é influenciada pelos exemplos mais próximos no espaço de atributos.
 
-**Exemplo de Aplicação:**
-- Reconhecimento de padrões: Classificação de imagens ou textos com base em características semelhantes presentes nos dados de treinamento.
+### 4. SVM/SVM.py
+
+**Funcionalidade:**
+Implementa o algoritmo de Support Vector Machine (SVM) para classificação.
+
+**Casos de Uso:**
+- Classificação binária e multiclasse com margens de decisão bem definidas.
+- Problemas onde é importante encontrar o hiperplano que melhor separa as classes.
+
+
 
 ## Como Utilizar
 
