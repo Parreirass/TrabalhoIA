@@ -7,7 +7,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 # Carregar o arquivo CSV
-caminho_do_csv = 'winequality-red.csv'
+caminho_do_csv = '../KNN/winequality-red.csv'
 
 # Lê o arquivo CSV e armazena em um DataFrame
 data = pd.read_csv(caminho_do_csv)
