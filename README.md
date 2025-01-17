@@ -74,14 +74,4 @@ Implementa o algoritmo de Support Vector Machine (SVM) para classificação.
      ```
    - Execute os notebooks para treinar e avaliar os modelos.
 
-## Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias, correções ou novas funcionalidades.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
-
----
-
-*Observação:* Este README foi gerado com base nas informações disponíveis no repositório e pode ser atualizado conforme o desenvolvimento do projeto.
