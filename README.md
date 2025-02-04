@@ -139,6 +139,36 @@ O algoritmo funciona da seguinte maneira:
 
 Neste projeto, foi utilizado um valor de K igual a 15, o que significa que o algoritmo considera os 15 vizinhos mais próximos para classificar a qualidade do vinho.
 
+### Avaliação da Acurácia do Modelo KNN  
+
+#### 1. Definição de Acurácia e Outras Métricas  
+A **acurácia** é a proporção de previsões corretas feitas pelo modelo em relação ao total de amostras testadas. Ela é calculada pela seguinte fórmula:  
+
+$$
+\text{Acurácia} = \frac{\text{Número de previsões corretas}}{\text{Total de amostras testadas}}
+$$
+
+Além da acurácia, outras métricas como **precisão, recall e F1-score** podem ser analisadas para um entendimento mais completo do desempenho do modelo, especialmente se o dataset estiver desbalanceado.  
+
+#### 2. Fatores que Influenciam a Acurácia do KNN  
+
+##### a) Escolha do Valor de K  
+- Se **K for muito pequeno**, o modelo pode sofrer **overfitting**, sendo sensível a ruídos e variações locais nos dados.  
+- Se **K for muito grande**, o modelo pode sofrer **underfitting**, generalizando demais e perdendo detalhes importantes na classificação.  
+- A escolha ideal de K pode ser feita testando diferentes valores e avaliando a acurácia com **validação cruzada**.  
+
+##### b) Distância Utilizada  
+- O KNN normalmente utiliza a **distância Euclidiana**, mas outras métricas como **distância Manhattan** ou **distância de Minkowski** podem ser testadas para verificar qual funciona melhor para os dados.  
+
+##### c) Normalização dos Dados  
+- Como o KNN depende da distância entre os pontos, **dados com escalas muito diferentes** podem afetar os resultados.  
+- Aplicar técnicas de **normalização ou padronização (MinMaxScaler ou StandardScaler)** pode melhorar a acurácia do modelo.  
+
+##### d) Balanceamento do Dataset  
+- Se houver **desequilíbrio nas classes**, o modelo pode ter dificuldades em prever corretamente as classes menos representadas.  
+- Técnicas como **undersampling, oversampling ou ajuste de pesos nas classes** podem melhorar a acurácia para datasets desbalanceados.
+
+`A acurácia pode variar de execução para execução, pois o ponto de inicialização do experimento interfere no seu resultado`
 
 
 ## 4. SVM/SVM.py
@@ -189,6 +219,22 @@ O **SVM (Support Vector Machine)** é um algoritmo de aprendizado supervisionado
 #### Desvantagens:
 - Desempenho pode ser mais **lento** para grandes conjuntos de dados.
 - A escolha do **kernel** e dos parâmetros (como **C** e **gamma**) pode ser crucial e requer **ajuste**.
+
+### Fatores que interferem na acurácia do modelo SVM
+
+Existem diversos fatores que podem interferir na acurácia do modelo, então, é necessário testá-lo bastante com diversos parâmetros para obter um resultado otimizado.
+
+#### Principais Fatores que Afetam a Acurácia do SVM  
+
+| **Fator**                  | **Impacto**                                             | **Solução**                                      |
+|----------------------------|--------------------------------------------------------|-------------------------------------------------|
+| Escolha do Kernel          | Kernel inadequado pode reduzir a separação das classes | Testar `linear`, `poly`, `rbf`, `sigmoid`       |
+| Parâmetro C (Regularização)| C alto → Overfitting, C baixo → Underfitting          | Ajustar `C` via validação cruzada               |
+| Parâmetro Gamma            | Gamma alto → Overfitting, Gamma baixo → Underfitting  | Ajustar `gamma` via validação cruzada           |
+| Normalização               | Dados não escalonados podem prejudicar a performance  | Usar `StandardScaler()`                         |
+| Balanceamento das Classes  | Classes desbalanceadas podem levar a previsões enviesadas | Usar `class_weight='balanced'`                  |
+| Qualidade dos Dados        | Dados ruidosos podem afetar a decisão do modelo       | Remover outliers e aumentar o dataset          |
+
 
 
 ## Como Utilizar
