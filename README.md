@@ -170,6 +170,8 @@ Além da acurácia, outras métricas como **precisão, recall e F1-score** podem
 
 `A acurácia pode variar de execução para execução, pois o ponto de inicialização do experimento interfere no seu resultado`
 
+| Após 10 execuções de código, a acurácia do código KNN foi de 0,65, ou 65% (utilizando as configurações presentes no código do repositório). |
+| ------------------------------------------------------------------------------------------------------------------------------------------ |
 
 ## 4. SVM/SVM.py
 
